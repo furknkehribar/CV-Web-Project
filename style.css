@@ -1,7 +1,5 @@
-/* ==========================================================
-   1. DEĞİŞKENLER VE GENEL AYARLAR
-   Renkleri değiştirmek için sadece bu bölümü düzenlemen yeterli.
-   ========================================================== */
+/* 1. DEĞİŞKENLER VE GENEL AYARLAR
+   Renkleri değiştirmek için sadece bu bölümü düzenlemen yeterli.*/
 :root {
   --navy: #1f2a56;
   --navy-dark: #16203f;
@@ -61,9 +59,7 @@ h3 {
   padding: 0 1.5rem;
 }
 
-/* ==========================================================
-   2. NAVBAR
-   ========================================================== */
+/*  2. NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
@@ -100,9 +96,7 @@ h3 {
   color: var(--navy);
 }
 
-/* ==========================================================
-   3. HERO
-   ========================================================== */
+/* 3. HERO */
 .hero {
   padding: 6rem 0;
 }
@@ -137,7 +131,6 @@ h3 {
   margin-top: 2rem;
 }
 
-/* Profil fotoğrafı: yer tutucu kutu. Gerçek <img> eklenince otomatik sığar. */
 .profile-photo {
   flex-shrink: 0;
   width: 260px;
@@ -159,9 +152,7 @@ h3 {
   object-fit: cover;
 }
 
-/* ==========================================================
-   4. BUTONLAR
-   ========================================================== */
+/* 4. BUTONLAR */
 .btn {
   display: inline-block;
   padding: 0.75rem 1.75rem;
@@ -189,9 +180,7 @@ h3 {
   background: var(--gray-light);
 }
 
-/* ==========================================================
-   5. GENEL BÖLÜM DÜZENİ
-   ========================================================== */
+/* 5. GENEL BÖLÜM DÜZENİ */
 .section {
   padding: 5rem 0;
 }
@@ -200,9 +189,7 @@ h3 {
   background: var(--gray-light);
 }
 
-/* ==========================================================
-   6. ABOUT
-   ========================================================== */
+/* 6. ABOUT */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -228,9 +215,7 @@ h3 {
   color: var(--text-muted);
 }
 
-/* ==========================================================
-   7. SKILLS
-   ========================================================== */
+/* 7. SKILLS */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -262,9 +247,7 @@ h3 {
   color: var(--text-muted);
 }
 
-/* ==========================================================
-   8. PROJECTS
-   ========================================================== */
+/* 8. PROJECTS */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -277,19 +260,19 @@ h3 {
   margin: 14px auto;
   font-size: 14px;
   font-weight: 600;
-  text-decoration: none; /* Mavi alt çizgiyi kaldırır */
-  color:#f8fafc; /* Kart başlığıyla uyumlu koyu renk */
-  background-color: #1e293b ; /* Hafif kırık beyaz zemin */
-  border: 1.5px solid #cbd5e1; /* İnce çerçeve */
-  border-radius: 8px; /* Yumuşak köşeler */
-  transition: all 0.25s ease; /* Renk geçişlerini yumuşatır */
+  text-decoration: none;
+  color:#f8fafc;
+  background-color: #1e293b ;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  transition: all 0.25s ease;
   cursor: pointer;
 }
 .project-btn:hover {
-  background-color: white; /* Koyu lacivert/antrasit dolgu */
-  color: var(--navy-dark); /* Yazı beyaza döner */
+  background-color: white;
+  color: var(--navy-dark);
   border-color: #1e293b;
-  transform: translateY(-2px); /* Hafif yukarı kalkma efekti */
+  transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(30, 41, 59, 0.15);
 }
 .card {
@@ -303,7 +286,6 @@ h3 {
   border-color: var(--navy);
 }
 
-/* Proje görseli için yer tutucu: kendi görselinle değiştirebilirsin */
 .card-image {
   height: 150px;
   background: var(--gray-light);
@@ -340,9 +322,7 @@ h3 {
   border-radius: 999px;
 }
 
-/* ==========================================================
-   9. EDUCATION (ZAMAN ÇİZELGESİ)
-   ========================================================== */
+/* 9. EDUCATION */
 .timeline {
   border-left: 2px solid var(--navy);
   padding-left: 2rem;
@@ -358,7 +338,6 @@ h3 {
   margin-bottom: 0;
 }
 
-/* Çizgi üzerindeki küçük daire */
 .timeline-item::before {
   content: "";
   position: absolute;
@@ -377,30 +356,25 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
-/* ==========================================================
-   10. CONTACT
-   ========================================================== */
+/* 10. CONTACT */
 .links {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
   
-  /* KÜÇÜLTME VE ORTALAMA KODLARI */
-  max-width: 450px; /* Kutunun genişliğini 450px ile sınırlar (isteğe göre 400px-500px yapabilirsiniz) */
-  width: 100%;      /* Mobil cihazlarda ekran dışına taşmasını önler */
-  margin: 0 auto;   /* Sağdan ve soldan eşit boşluk bırakarak tam ortaya alır */
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .links .btn {
   text-align: center;
-  width: 100%;      /* Butonların kutu içine tam oturmasını sağlar */
+  width: 100%;
 }
 
 
-/* ==========================================================
-   11. FOOTER
-   ========================================================== */
+/* 11. FOOTER */
 .footer {
   background: var(--navy);
   color: var(--white);
@@ -409,9 +383,7 @@ h3 {
   font-size: 0.9rem;
 }
 
-/* ==========================================================
-   12. RESPONSIVE (TABLET VE MOBİL)
-   ========================================================== */
+/* 12. RESPONSIVE (TABLET VE MOBİL) */
 
 /* Tablet */
 @media (max-width: 900px) {
